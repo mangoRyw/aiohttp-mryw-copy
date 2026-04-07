@@ -268,6 +268,16 @@ _RetType_co = TypeVar(
 _CharsetResolver = Callable[[ClientResponse, bytes], str]
 
 
+def _recover_redirect_location(r_url: str) -> str:
+    if not any("\udc80" <= ch <= "\udcff" for ch in r_url):
+        return r_url
+    raw = r_url.encode("utf-8", "surrogateescape")
+    try:
+        return raw.decode("utf-8")
+    except UnicodeDecodeError:
+        return raw.decode("latin-1")
+
+
 @final
 class ClientSession:
     """First-class interface for making HTTP requests."""
@@ -846,6 +856,8 @@ class ClientSession:
                             # reading from correct redirection
                             # response is forbidden
                             resp.release()
+
+                        r_url = _recover_redirect_location(r_url)
 
                         try:
                             parsed_redirect_url = URL(
