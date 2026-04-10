@@ -226,7 +226,6 @@ setuptools-git==1.2
 six==1.17.0
     # via
     #   python-dateutil
-    #   sphinx
     #   sphinxcontrib-spelling
 slotscheck==0.19.1
     # via -r requirements/lint.in
@@ -292,7 +291,7 @@ wait-for-it==2.3.0
     # via -r requirements/test-common.in
 wheel==0.45.1
     # via pip-tools
-yarl==1.21.0
+yarl==1.22.0
     # via -r requirements/runtime-deps.in
 zipp==3.23.0
     # via

@@ -219,9 +219,7 @@ rich==14.1.0
 setuptools-git==1.2
     # via -r requirements/test-common.in
 six==1.17.0
-    # via
-    #   python-dateutil
-    #   sphinx
+    # via python-dateutil
 slotscheck==0.19.1
     # via -r requirements/lint.in
 sphinx==1.2.3
@@ -283,7 +281,7 @@ wait-for-it==2.3.0
     # via -r requirements/test-common.in
 wheel==0.45.1
     # via pip-tools
-yarl==1.21.0
+yarl==1.22.0
     # via -r requirements/runtime-deps.in
 zipp==3.23.0
     # via

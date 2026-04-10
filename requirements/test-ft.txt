@@ -152,7 +152,7 @@ typing-inspection==0.4.2
     # via pydantic
 wait-for-it==2.3.0
     # via -r requirements/test-common.in
-yarl==1.21.0
+yarl==1.22.0
     # via -r requirements/runtime-deps.in
 zipp==3.23.0
     # via importlib-metadata
