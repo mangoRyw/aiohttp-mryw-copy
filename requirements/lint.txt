@@ -69,7 +69,7 @@ pluggy==1.6.0
     # via pytest
 pre-commit==4.3.0
     # via -r requirements/lint.in
-pycares==4.11.0
+pycares==5.0.1
     # via aiodns
 pycparser==2.23
     # via cffi
