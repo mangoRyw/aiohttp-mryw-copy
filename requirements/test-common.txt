@@ -12,7 +12,7 @@ cffi==2.0.0
     # via
     #   cryptography
     #   pytest-codspeed
-click==8.2.1
+click==8.1.8
     # via wait-for-it
 coverage==7.10.7
     # via
@@ -30,11 +30,13 @@ freezegun==1.5.5
     # via -r requirements/test-common.in
 idna==3.11
     # via trustme
+importlib-metadata==8.7.1
+    # via pytest-codspeed
 iniconfig==2.1.0
     # via pytest
 isal==1.8.0 ; python_version < "3.14"
     # via -r requirements/test-common.in
-markdown-it-py==4.0.0
+markdown-it-py==3.0.0
     # via rich
 mdurl==0.1.2
     # via markdown-it-py
@@ -85,7 +87,7 @@ python-on-whales==0.78.0
     # via -r requirements/test-common.in
 re-assert==1.1.0
     # via -r requirements/test-common.in
-regex==2025.9.18
+regex==2026.1.15
     # via re-assert
 rich==14.1.0
     # via pytest-codspeed
@@ -113,5 +115,7 @@ typing-inspection==0.4.2
     # via pydantic
 wait-for-it==2.3.0
     # via -r requirements/test-common.in
+zipp==3.23.0
+    # via importlib-metadata
 zlib-ng==1.0.0
     # via -r requirements/test-common.in
