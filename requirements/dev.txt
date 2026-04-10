@@ -14,8 +14,6 @@ aiohttp-theme==0.1.7
     # via -r requirements/doc.in
 aiosignal==1.4.0
     # via -r requirements/runtime-deps.in
-alabaster==1.0.0
-    # via sphinx
 annotated-types==0.7.0
     # via pydantic
 async-timeout==5.0.1 ; python_version < "3.11"
@@ -24,8 +22,10 @@ async-timeout==5.0.1 ; python_version < "3.11"
     #   valkey
 attrs==25.3.0
     # via -r requirements/runtime-deps.in
-babel==2.17.0
-    # via sphinx
+backports-zstd==0.5.0 ; platform_python_implementation == "CPython" and python_version < "3.14"
+    # via
+    #   -r requirements/lint.in
+    #   -r requirements/runtime-deps.in
 blockbuster==1.5.26
     # via
     #   -r requirements/lint.in
@@ -66,7 +66,7 @@ distlib==0.4.0
     # via virtualenv
 docutils==0.21.2
     # via sphinx
-exceptiongroup==1.3.0
+exceptiongroup==1.3.1
     # via pytest
 execnet==2.1.1
     # via pytest-xdist
@@ -93,8 +93,13 @@ idna==3.11
     #   requests
     #   trustme
     #   yarl
-imagesize==1.4.1
-    # via sphinx
+importlib-metadata==8.7.1
+    # via
+    #   build
+    #   pytest-codspeed
+    #   towncrier
+importlib-resources==6.5.2
+    # via towncrier
 iniconfig==2.1.0
     # via pytest
 isal==1.7.2 ; python_version < "3.14"
@@ -128,7 +133,6 @@ packaging==25.0
     #   build
     #   gunicorn
     #   pytest
-    #   sphinx
 pathspec==0.12.1
     # via mypy
 pip-tools==7.5.1
@@ -203,35 +207,21 @@ re-assert==1.1.0
 regex==2025.9.18
     # via re-assert
 requests==2.32.5
-    # via
-    #   cherry-picker
-    #   sphinx
+    # via cherry-picker
 rich==14.1.0
     # via pytest-codspeed
 setuptools-git==1.2
     # via -r requirements/test-common.in
 six==1.17.0
-    # via python-dateutil
+    # via
+    #   python-dateutil
+    #   sphinx
 slotscheck==0.19.1
     # via -r requirements/lint.in
-snowballstemmer==3.0.1
-    # via sphinx
-sphinx==8.1.3
+sphinx==1.2.3
     # via
     #   -r requirements/doc.in
     #   sphinxcontrib-towncrier
-sphinxcontrib-applehelp==2.0.0
-    # via sphinx
-sphinxcontrib-devhelp==2.0.0
-    # via sphinx
-sphinxcontrib-htmlhelp==2.1.0
-    # via sphinx
-sphinxcontrib-jsmath==1.0.1
-    # via sphinx
-sphinxcontrib-qthelp==2.0.0
-    # via sphinx
-sphinxcontrib-serializinghtml==2.0.0
-    # via sphinx
 sphinxcontrib-towncrier==0.5.0a0
     # via -r requirements/doc.in
 stamina==25.1.0
@@ -247,7 +237,6 @@ tomli==2.2.1
     #   pip-tools
     #   pytest
     #   slotscheck
-    #   sphinx
     #   towncrier
 towncrier==25.8.0
     # via
@@ -267,6 +256,7 @@ typing-extensions==4.15.0
     #   pydantic
     #   pydantic-core
     #   python-on-whales
+    #   stamina
     #   typing-inspection
     #   virtualenv
 typing-inspection==0.4.2
@@ -289,14 +279,14 @@ wheel==0.45.1
     # via pip-tools
 yarl==1.21.0
     # via -r requirements/runtime-deps.in
+zipp==3.23.0
+    # via
+    #   importlib-metadata
+    #   importlib-resources
 zlib-ng==1.0.0
     # via
     #   -r requirements/lint.in
     #   -r requirements/test-common.in
-backports.zstd==0.5.0 ; platform_python_implementation == "CPython" and python_version < "3.14"
-    # via
-    #   -r requirements/lint.in
-    #   -r requirements/runtime-deps.in
 
 # The following packages are considered to be unsafe in a requirements file:
 pip==25.2
