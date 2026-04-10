@@ -46,5 +46,5 @@ typing-extensions==4.15.0
     # via
     #   aiosignal
     #   multidict
-yarl==1.21.0
+yarl==1.22.0
     # via -r requirements/runtime-deps.in
