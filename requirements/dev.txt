@@ -135,7 +135,7 @@ packaging==25.0
     #   build
     #   gunicorn
     #   pytest
-pathspec==0.12.1
+pathspec==1.0.4
     # via mypy
 pip-tools==7.5.1
     # via -r requirements/dev.in
@@ -219,9 +219,7 @@ rich==14.1.0
 setuptools-git==1.2
     # via -r requirements/test-common.in
 six==1.17.0
-    # via
-    #   python-dateutil
-    #   sphinx
+    # via python-dateutil
 slotscheck==0.19.1
     # via -r requirements/lint.in
 sphinx==1.2.3
