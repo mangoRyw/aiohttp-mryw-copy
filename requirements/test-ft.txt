@@ -16,6 +16,8 @@ async-timeout==5.0.1 ; python_version < "3.11"
     # via -r requirements/runtime-deps.in
 attrs==25.3.0
     # via -r requirements/runtime-deps.in
+backports-zstd==0.5.0 ; platform_python_implementation == "CPython" and python_version < "3.14"
+    # via -r requirements/runtime-deps.in
 blockbuster==1.5.26
     # via -r requirements/test-common.in
 brotli==1.2.0 ; platform_python_implementation == "CPython"
@@ -25,7 +27,7 @@ cffi==2.0.0
     #   cryptography
     #   pycares
     #   pytest-codspeed
-click==8.2.1
+click==8.1.8
     # via wait-for-it
 coverage==7.10.7
     # via
@@ -51,15 +53,17 @@ idna==3.11
     # via
     #   trustme
     #   yarl
+importlib-metadata==8.7.1
+    # via pytest-codspeed
 iniconfig==2.1.0
     # via pytest
 isal==1.8.0 ; python_version < "3.14"
     # via -r requirements/test-common.in
-markdown-it-py==4.0.0
+markdown-it-py==3.0.0
     # via rich
 mdurl==0.1.2
     # via markdown-it-py
-multidict==6.6.4
+multidict==6.7.1
     # via
     #   -r requirements/runtime-deps.in
     #   yarl
@@ -150,7 +154,7 @@ wait-for-it==2.3.0
     # via -r requirements/test-common.in
 yarl==1.21.0
     # via -r requirements/runtime-deps.in
+zipp==3.23.0
+    # via importlib-metadata
 zlib-ng==1.0.0
     # via -r requirements/test-common.in
-backports.zstd==0.5.0 ; platform_python_implementation == "CPython" and python_version < "3.14"
-    # via -r requirements/runtime-deps.in
