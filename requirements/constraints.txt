@@ -43,7 +43,7 @@ cffi==2.0.0
     #   pytest-codspeed
 cfgv==3.4.0
     # via pre-commit
-charset-normalizer==3.4.3
+charset-normalizer==3.4.7
     # via requests
 cherry-picker==2.6.0
     # via -r requirements/dev.in
@@ -226,7 +226,6 @@ setuptools-git==1.2
 six==1.17.0
     # via
     #   python-dateutil
-    #   sphinx
     #   sphinxcontrib-spelling
 slotscheck==0.19.1
     # via -r requirements/lint.in
