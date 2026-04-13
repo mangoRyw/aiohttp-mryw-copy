@@ -173,7 +173,7 @@ pygments==2.20.0
     #   pytest
     #   rich
     #   sphinx
-pyjwt==2.8.0
+pyjwt==2.12.1
     # via
     #   gidgethub
     #   pyjwt
@@ -262,6 +262,7 @@ typing-extensions==4.15.0
     #   mypy
     #   pydantic
     #   pydantic-core
+    #   pyjwt
     #   python-on-whales
     #   stamina
     #   typing-inspection
