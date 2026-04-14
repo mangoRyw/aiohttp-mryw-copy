@@ -6,12 +6,26 @@
 #
 aiohttp-theme==0.1.7
     # via -r requirements/doc.in
+alabaster==0.7.16
+    # via sphinx
+babel==2.18.0
+    # via sphinx
+certifi==2026.2.25
+    # via requests
+charset-normalizer==3.4.7
+    # via requests
 click==8.1.8
     # via towncrier
 docutils==0.21.2
     # via sphinx
+idna==3.11
+    # via requests
+imagesize==1.5.0
+    # via sphinx
 importlib-metadata==8.7.1
-    # via towncrier
+    # via
+    #   sphinx
+    #   towncrier
 importlib-resources==6.5.2
     # via towncrier
 jinja2==3.1.6
@@ -20,20 +34,42 @@ jinja2==3.1.6
     #   towncrier
 markupsafe==3.0.3
     # via jinja2
+packaging==26.1
+    # via sphinx
 pygments==2.20.0
     # via sphinx
-sphinx==1.2.3
+requests==2.32.5
+    # via sphinx
+snowballstemmer==3.0.1
+    # via sphinx
+sphinx==7.4.7
     # via
     #   -r requirements/doc.in
     #   sphinxcontrib-towncrier
+sphinxcontrib-applehelp==2.0.0
+    # via sphinx
+sphinxcontrib-devhelp==2.0.0
+    # via sphinx
+sphinxcontrib-htmlhelp==2.1.0
+    # via sphinx
+sphinxcontrib-jsmath==1.0.1
+    # via sphinx
+sphinxcontrib-qthelp==2.0.0
+    # via sphinx
+sphinxcontrib-serializinghtml==2.0.0
+    # via sphinx
 sphinxcontrib-towncrier==0.5.0a0
     # via -r requirements/doc.in
 tomli==2.4.1
-    # via towncrier
+    # via
+    #   sphinx
+    #   towncrier
 towncrier==25.8.0
     # via
     #   -r requirements/doc.in
     #   sphinxcontrib-towncrier
+urllib3==2.6.3
+    # via requests
 zipp==3.23.0
     # via
     #   importlib-metadata
