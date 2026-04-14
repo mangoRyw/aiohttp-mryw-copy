@@ -16,7 +16,7 @@ charset-normalizer==3.4.7
     # via requests
 click==8.1.8
     # via towncrier
-docutils==0.21.2
+docutils==0.22.4
     # via sphinx
 idna==3.11
     # via requests
