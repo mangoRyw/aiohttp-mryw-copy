@@ -8,7 +8,7 @@ aiohttp-theme==0.1.7
     # via -r requirements/doc.in
 click==8.1.8
     # via towncrier
-docutils==0.21.2
+docutils==0.22.4
     # via sphinx
 importlib-metadata==8.7.1
     # via towncrier
