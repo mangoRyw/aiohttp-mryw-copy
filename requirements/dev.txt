@@ -180,7 +180,7 @@ pygments==2.20.0
     #   pytest
     #   rich
     #   sphinx
-pyjwt==2.12.1
+pyjwt==2.13.0
     # via
     #   gidgethub
     #   pyjwt
