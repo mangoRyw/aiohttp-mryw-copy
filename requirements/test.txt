@@ -12,6 +12,8 @@ aiosignal==1.4.0
     # via -r requirements/runtime-deps.in
 annotated-types==0.7.0
     # via pydantic
+ast-serialize==0.5.0
+    # via mypy
 async-timeout==5.0.1 ; python_version < "3.11"
     # via -r requirements/runtime-deps.in
 attrs==26.1.0
@@ -52,8 +54,6 @@ idna==3.18
     # via
     #   trustme
     #   yarl
-importlib-metadata==8.7.1
-    # via pytest-codspeed
 iniconfig==2.1.0
     # via pytest
 isal==1.7.2 ; python_version < "3.14"
@@ -68,7 +68,7 @@ multidict==6.7.1
     # via
     #   -r requirements/runtime-deps.in
     #   yarl
-mypy==1.19.1 ; implementation_name == "cpython"
+mypy==2.1.0 ; implementation_name == "cpython"
     # via -r requirements/test-common.in
 mypy-extensions==1.1.0
     # via mypy
@@ -157,7 +157,5 @@ wait-for-it==2.3.0
     # via -r requirements/test-common.in
 yarl==1.22.0
     # via -r requirements/runtime-deps.in
-zipp==3.23.1
-    # via importlib-metadata
 zlib-ng==1.0.0
     # via -r requirements/test-common.in
