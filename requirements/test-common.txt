@@ -28,8 +28,6 @@ freezegun==1.5.5
     # via -r requirements/test-common.in
 idna==3.18
     # via trustme
-importlib-metadata==8.7.1
-    # via pytest-codspeed
 iniconfig==2.1.0
     # via pytest
 isal==1.8.0 ; python_version < "3.14"
@@ -87,7 +85,7 @@ python-on-whales==0.81.0
     # via -r requirements/test-common.in
 re-assert==1.1.0
     # via -r requirements/test-common.in
-regex==2026.1.15
+regex==2026.5.9
     # via re-assert
 rich==15.0.0
     # via pytest-codspeed
@@ -115,7 +113,5 @@ typing-inspection==0.4.2
     # via pydantic
 wait-for-it==2.3.0
     # via -r requirements/test-common.in
-zipp==3.23.1
-    # via importlib-metadata
 zlib-ng==1.0.0
     # via -r requirements/test-common.in
