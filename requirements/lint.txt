@@ -28,7 +28,7 @@ distlib==0.4.3
     # via virtualenv
 exceptiongroup==1.3.1
     # via pytest
-filelock==3.19.1
+filelock==3.29.4
     # via
     #   python-discovery
     #   virtualenv
@@ -40,8 +40,6 @@ identify==2.6.15
     # via pre-commit
 idna==3.18
     # via trustme
-importlib-metadata==8.7.1
-    # via pytest-codspeed
 iniconfig==2.1.0
     # via pytest
 isal==1.7.2
@@ -103,7 +101,7 @@ rich==15.0.0
     # via pytest-codspeed
 six==1.17.0
     # via python-dateutil
-slotscheck==0.19.1
+slotscheck==0.20.0
     # via -r requirements/lint.in
 tomli==2.4.1
     # via
@@ -130,7 +128,5 @@ valkey==6.1.1
     # via -r requirements/lint.in
 virtualenv==21.5.1
     # via pre-commit
-zipp==3.23.1
-    # via importlib-metadata
 zlib-ng==1.0.0
     # via -r requirements/lint.in
