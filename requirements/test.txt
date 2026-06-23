@@ -28,7 +28,7 @@ cffi==2.0.0
     #   pycares
 click==8.1.8
     # via wait-for-it
-coverage==7.10.7
+coverage==7.14.3
     # via
     #   -r requirements/test-common.in
     #   pytest-cov
@@ -52,8 +52,6 @@ idna==3.18
     # via
     #   trustme
     #   yarl
-importlib-metadata==8.7.1
-    # via pytest-codspeed
 iniconfig==2.1.0
     # via pytest
 isal==1.7.2 ; python_version < "3.14"
@@ -157,7 +155,5 @@ wait-for-it==2.3.0
     # via -r requirements/test-common.in
 yarl==1.22.0
     # via -r requirements/runtime-deps.in
-zipp==3.23.1
-    # via importlib-metadata
 zlib-ng==1.0.0
     # via -r requirements/test-common.in
