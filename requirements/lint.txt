@@ -8,6 +8,8 @@ aiodns==3.6.1
     # via -r requirements/lint.in
 annotated-types==0.7.0
     # via pydantic
+ast-serialize==0.5.0
+    # via mypy
 async-timeout==5.0.1
     # via valkey
 backports-zstd==1.3.0 ; implementation_name == "cpython"
@@ -28,7 +30,7 @@ distlib==0.4.3
     # via virtualenv
 exceptiongroup==1.3.1
     # via pytest
-filelock==3.19.1
+filelock==3.29.4
     # via
     #   python-discovery
     #   virtualenv
@@ -40,8 +42,6 @@ identify==2.6.15
     # via pre-commit
 idna==3.18
     # via trustme
-importlib-metadata==8.7.1
-    # via pytest-codspeed
 iniconfig==2.1.0
     # via pytest
 isal==1.7.2
@@ -52,7 +52,7 @@ markdown-it-py==3.0.0
     # via rich
 mdurl==0.1.2
     # via markdown-it-py
-mypy==1.19.1 ; implementation_name == "cpython"
+mypy==2.1.0 ; implementation_name == "cpython"
     # via -r requirements/lint.in
 mypy-extensions==1.1.0
     # via mypy
@@ -130,7 +130,5 @@ valkey==6.1.1
     # via -r requirements/lint.in
 virtualenv==21.5.1
     # via pre-commit
-zipp==3.23.1
-    # via importlib-metadata
 zlib-ng==1.0.0
     # via -r requirements/lint.in
